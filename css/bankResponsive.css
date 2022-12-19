@@ -10,7 +10,7 @@
         order: 1;
         position: none;
         float: none;
-        background-image: url(/img/bg-intro-mobile.svg);
+        background-image: url(../img/bg-intro-mobile.svg);
         background-position-y: -90px;
         
         background-repeat: no-repeat;

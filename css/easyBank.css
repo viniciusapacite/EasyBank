@@ -145,7 +145,7 @@ div.right {
     height: 750px;
     width: 62%;
     max-width: 100%;
-    background-image: url(/img/bg-intro-desktop.svg);
+    background-image: url(../img/bg-intro-desktop.svg);
     background-repeat: no-repeat;
     background-position-y: -260px;
 
