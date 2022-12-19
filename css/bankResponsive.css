@@ -1,0 +1,215 @@
+
+@media screen and (min-width:300px) and (max-width:400px){
+    div.right {
+        display: flex;
+        width: 100%;
+        max-width: 900px;
+        height: 100%;
+        max-height: 400px;
+        margin: 0 auto;
+        order: 1;
+        position: none;
+        float: none;
+        background-image: url(/img/bg-intro-mobile.svg);
+        background-position-y: -90px;
+        
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+}
+@media screen and (min-width:300px) and (max-width:992px){
+
+    html, body {
+        font-size: 1rem;
+    }
+
+    div.links {
+        display: none;
+    }
+
+    div.button {
+        display: none;
+    }
+
+    #divOrder1 {
+        order: 2;
+        
+    }
+
+    #divOrder2 {
+        order: 1;
+        display: none;
+    }
+
+    header .menu{
+        height: 40px;
+    }
+
+    header .logo {
+        float: left;
+    
+    }
+    header .logo > img{
+        float: left;
+        position: relative;
+        left: -20%;
+    }
+
+    section.banner  {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    main.content {
+        order: 2;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        text-align: center;
+        padding: 0 4%;
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+
+    main.content > h1 {
+        font-size: 41px;
+        padding: 0 6%;
+    }
+
+    main.content > input {
+        margin: 0 auto;
+        text-align: center;
+        padding: 16px 40px;
+    }
+
+    div.right {
+        display: flex;
+        width: 100%;
+        max-width: 100%;
+        height: 540px;
+        margin: 0 auto;
+        order: 1;
+        position: none;
+        float: none;
+        background-image: url(/img/bg-intro-mobile.svg);
+        background-position-y: -90px;
+        
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+
+    .right > img {
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 580px;
+        text-align: center;
+        float: none;
+        top: -23%;
+        position: absolute;
+        left: 50%;
+        top: -31%;
+        transform: translate(-50%);
+    }
+
+    div.center {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    section.info-cards {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    section.cards {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.card {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.card > p {
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .center2 {
+        padding: 0 4%;
+    }
+
+    .center2 > h1 {
+        text-align: center;
+        margin-top: 6rem;
+    }
+
+    div.articles {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.card-2 {
+        width: 100%;
+        max-width: 350px;
+        margin-top: 2rem;
+    }
+
+    div.card-2 > img {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+
+    div.text-align {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .center3 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 4rem;
+    }
+
+    footer {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .privacy > button {
+        margin-top: 2rem;
+        float: none;
+    }
+    .redes > img {
+        margin: 0 auto;
+        max-width: 100%;
+        width: 100%;
+    }
+
+}
