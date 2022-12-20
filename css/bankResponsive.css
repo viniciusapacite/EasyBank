@@ -1,7 +1,7 @@
 
-@media screen and (min-width:992px){  
+@media screen and (min-width:300px){  
     #img-main2 {
-        display: none;
+        display: block;
       }
 }
 
