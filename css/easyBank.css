@@ -1,5 +1,5 @@
 @import url(/css/bankResponsive.css);
-*{margin: 0; padding:0; box-sizing: border-box; }
+*{margin: 0; padding:0; box-sizing: border-box;}
 
 html, body {
     font-size:18px;
@@ -40,7 +40,7 @@ header {
 
 nav.menu {
     width: 100%;
-    max-width: 100%;
+    max-width: 98%;
     display: flex;
     justify-content: space-between;
     align-self: center;
@@ -87,6 +87,7 @@ div.button > input {
     border: none;
     border-radius: 20px;
     padding: 15px 40px;
+    
 
    color: var(--White);
    background: linear-gradient(90deg, #39CE65 0%, #36BF9D 52.6%, #37B6C6 97.4%);
@@ -147,26 +148,33 @@ div.right {
     max-width: 100%;
     background-image: url(../img/bg-intro-desktop.svg);
     background-repeat: no-repeat;
-    background-position-y: -260px;
+    background-position-y:100%;
+    object-fit: cover;
 
     position: relative;
+    z-index: 1;
+
+  
 }
 
 .right > img {
     float: right;
     max-width: 100%;
-    width: 80%;
+    width: 65%;
     
     position: absolute;
-    margin-left: 30%;
+    margin-left: 35%;
+    object-fit: cover;
     top: -16%;
-    overflow: hidden;
-   
+ 
 }
 
-div.img-main {
+#img-main {
     overflow: hidden;
+
 }
+
+
 
 .center3 {
     height: 100%;
@@ -191,7 +199,7 @@ div.img-main {
     width: 100%;
     max-width: 100%;
     padding: 6.25rem 10%;
-    
+    z-index: 2;
     background-color: var(--LightGrayish-Blue);
 }
 

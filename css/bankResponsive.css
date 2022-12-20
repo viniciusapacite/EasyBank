@@ -1,4 +1,10 @@
 
+@media screen and (min-width:992px){  
+    #img-main2 {
+        display: none;
+      }
+}
+
 @media screen and (min-width:300px) and (max-width:400px){
     div.right {
         display: flex;
@@ -10,12 +16,25 @@
         order: 1;
         position: none;
         float: none;
-        background-image: url(../img/bg-intro-mobile.svg);
-        background-position-y: -90px;
+        background-image: url(../img/image-mockups.png);
+        background-position-y: -100%;
         
         background-repeat: no-repeat;
         background-size: 100%;
     }
+    .right > img {
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 580px;
+        text-align: center;
+        float: none;
+        top: -40%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
 
 }
 @media screen and (min-width:300px) and (max-width:992px){
@@ -34,6 +53,7 @@
 
     #divOrder1 {
         order: 2;
+        padding: 3% 0;
         
     }
 
@@ -76,8 +96,12 @@
     }
 
     main.content > h1 {
-        font-size: 41px;
-        padding: 0 6%;
+        font-size: 2.5625rem;
+        padding: 0 30px;
+    }
+
+    main.content > p {
+        padding: 0 20px;
     }
 
     main.content > input {
@@ -91,16 +115,18 @@
         width: 100%;
         max-width: 100%;
         height: 540px;
+      
         margin: 0 auto;
         order: 1;
         position: none;
         float: none;
         background-image: url(../img/bg-intro-mobile.svg);
         background-position-y: -90px;
+        background-position-x: center;
         
         background-repeat: no-repeat;
         background-size: 100%;
-        background-position: center;
+        background-position: top center;
     }
 
     .right > img {
@@ -110,13 +136,22 @@
         max-width: 580px;
         text-align: center;
         float: none;
-        top: -23%;
+        top: -24%;
         position: absolute;
         left: 50%;
-        top: -31%;
+     
         transform: translate(-50%);
     }
 
+    #img-main {
+        display: none;
+      }
+
+    /* .right > img:nth-child(2){
+        display: none;
+      } */
+
+  
     div.center {
         width: 100%;
         max-width: 100%;
