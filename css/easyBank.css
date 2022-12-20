@@ -24,18 +24,33 @@ html, body {
     --White: hsl(0, 0%, 100%);
 } 
 
+#header {
+    z-index: 99;
+}
+
 .clear {
     clear: both;
 }
 
+
+.menu-toggle {
+    display: none;
+}
+
+.box {
+    display: block;
+    position: relative;
+}
+
 header {
+    display: flex;
     width: 100%;
     max-width: 100%;
     padding: 15px 10%;
 
     background-color: var(--White);
-    position: relative;
-    z-index: 10;
+    position: absolute;
+    z-index: 99;
 }
 
 nav.menu {
@@ -45,12 +60,15 @@ nav.menu {
     justify-content: space-between;
     align-self: center;
     align-items: center;
+    z-index: 98;
 }
 
 div.links {
     display: flex;
     gap: 30px;
     position: relative;
+    transition: 800ms all ease;
+    z-index: 90;
 }
 
 div.links > a {
@@ -62,6 +80,8 @@ div.links > a {
     position: relative;
     margin: 0 auto;
     font-size: 0.9rem;
+    transition: 800ms all ease;
+    z-index: -1;
 }
 
 div.links > a:hover {
@@ -79,8 +99,7 @@ div.links > a:hover::after {
     position: absolute;
     left: 0;
     top: 43px;
-    transition: 3s all;
-
+    z-index: 1;
 }
 
 div.button > input {
@@ -170,12 +189,12 @@ div.right {
 }
 
 #img-main {
-    overflow: hidden;
+    overflow: hidden;   
 }
 
 #img-main2 {
     display: none;
-} 
+}
 
 
 

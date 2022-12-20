@@ -1,11 +1,21 @@
 
 @media screen and (min-width:300px){  
-    #img-main2 {
+    img#img-main2 {
         display: block;
+      }
+
+      #header {
+        z-index: 99;
+        position: relative;
       }
 }
 
 @media screen and (min-width:300px) and (max-width:400px){
+    header {
+        z-index: 99;
+    }
+
+
     div.right {
         display: flex;
         width: 100%;
@@ -14,13 +24,14 @@
         max-height: 400px;
         margin: 0 auto;
         order: 1;
-        position: none;
+        position: relative;
         float: none;
         background-image: url(../img/image-mockups.png);
         background-position-y: -100%;
         
         background-repeat: no-repeat;
         background-size: 100%;
+        z-index:1;
     }
     .right > img {
         display: flex;
@@ -34,17 +45,61 @@
         left: 50%;
         transform: translate(-50%);
     }
-
-
 }
+
 @media screen and (min-width:300px) and (max-width:992px){
 
     html, body {
         font-size: 1rem;
     }
 
+    /* menu hamburgur para mobile (começo)*/
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        z-index: -1;
+    }
+
+    .menu-toggle > img {
+        width: 30px;
+        height: 20px;
+        z-index: -1;
+    }
+
+    /* menu hamburgur para mobile  (fim)*/
+
     div.links {
         display: none;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        max-width: 500px;
+        
+        padding: 25px;
+        position: absolute;
+        left: 50%;
+        top: 5rem;
+        transform: translate(-50%);
+        transition: 1s all ease-out;
+
+        border-radius: 5px;
+        box-shadow:  0px 0px 20rem 10rem hsl(233, 26%, 24%);
+        z-index: -1;
+    }
+
+    div.links > a {
+        color: rgb(45, 49, 77);
+        opacity: 0.7;
+        font-weight: 600;
+        font-family: 'Public Sans', sans-serif;
+        transition: 1s all ease-out;
+        font-size: 18px;
+        z-index: -1;
+    }
+
+    div.links > a:hover {
+        color: hsl(136, 65%, 51%);
     }
 
     div.button {
@@ -54,7 +109,6 @@
     #divOrder1 {
         order: 2;
         padding: 3% 0;
-        
     }
 
     #divOrder2 {
@@ -63,7 +117,9 @@
     }
 
     header .menu{
-        height: 60px;
+        height: 30px;
+        position: relative;
+        z-index: -1;
     }
 
     header .logo {
@@ -145,6 +201,7 @@
 
     #img-main {
         display: none;
+        z-index: 0;
       }
 
     /* .right > img:nth-child(2){
