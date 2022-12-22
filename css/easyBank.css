@@ -26,6 +26,7 @@ html, body {
 
 #header {
     z-index: 99;
+    position: fixed;
 }
 
 .clear {
@@ -40,6 +41,7 @@ html, body {
 .box {
     display: block;
     position: relative;
+    z-index: auto;
 }
 
 header {
@@ -49,8 +51,8 @@ header {
     padding: 15px 10%;
 
     background-color: var(--White);
-    position: absolute;
-    z-index: 99;
+    position: fixed;
+    z-index: 10;
 }
 
 nav.menu {
@@ -60,15 +62,13 @@ nav.menu {
     justify-content: space-between;
     align-self: center;
     align-items: center;
-    z-index: 98;
 }
 
 div.links {
     display: flex;
     gap: 30px;
-    position: relative;
+    position: sticky;
     transition: 800ms all ease;
-    z-index: 90;
 }
 
 div.links > a {
@@ -82,6 +82,11 @@ div.links > a {
     font-size: 0.9rem;
     transition: 800ms all ease;
     z-index: -1;
+}
+
+
+#adc {
+    transition: 1s all ease;
 }
 
 div.links > a:hover {
