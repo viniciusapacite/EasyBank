@@ -10,6 +10,15 @@
       }
 }
 
+
+@media screen and (min-width:992px){
+    img#img-main2 {
+        display: none;
+      }
+}
+
+
+
 @media screen and (min-width:300px) and (max-width:400px){
     header {
         z-index: 99;
@@ -132,7 +141,7 @@
     header .logo > img{
         float: left;
         position: relative;
-        left: -20%;
+        left: -10%;
     }
 
     section.banner  {
@@ -307,4 +316,42 @@
         width: 100%;
     }
 
+}
+
+@media screen and (min-width:992px) and (max-width:1441px){
+    div.right > img {
+        width: 80%;
+        max-width: 100%;
+        margin-left: 20%;
+        margin-top: -15%;
+        float: left;
+    }
+    div.right {
+        width: 100%;
+        float: right;
+
+        background-position-x: 10%;
+        background-position-y:70%;
+    }
+
+    main.content {
+        padding-top: 10%;
+        width: 30%;
+        height: 500px;
+    }
+
+    main.content > h1 {
+        font-size: 36px;
+        font-weight: 500;
+        color:  rgb(45, 49, 77);
+    }
+
+    main.content > p {
+        font-size: 16px;
+    }
+
+    section.banner {
+        padding: 0;
+        height: 600px;
+    }
 }
